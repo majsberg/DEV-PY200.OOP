@@ -15,8 +15,20 @@ BOOKS_DATABASE = [
 # TODO написать класс Book
 class Book:
     def __init__(self, id_, name, pages):
+        if not isinstance(id_, int):
+            raise TypeError('Id должен быть типом int')
+        if id_ <= 0:
+            raise ValueError('Id должен быть больше нуля')
         self.id = id_
+
+        if not isinstance(name, str):
+            raise TypeError('Name должен быть типом str')
         self.name = name
+
+        if not isinstance(pages, int):
+            raise TypeError('Pages должен быть типом int')
+        if pages <= 0:
+            raise ValueError('Pages должен быть больше нуля')
         self.pages = pages
 
     def __str__(self):

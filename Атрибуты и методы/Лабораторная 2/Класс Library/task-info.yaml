@@ -32,7 +32,7 @@ files:
         encrypted_possible_answer: |-
           class Book:
               ...
-      - offset: 345
+      - offset: 799
         length: 586
         placeholder_text: '# TODO написать класс Library'
         initial_state:

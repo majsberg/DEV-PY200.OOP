@@ -1,5 +1,5 @@
 class Figure:
-    def __init__(self, name=None):
+    def __init__(self, name='Общее название'):
         self._name = name
 
     def print_name(self):
@@ -7,15 +7,16 @@ class Figure:
 
 
 class Rectangle(Figure):
-    def __init__(self, a, b, name=None):
+    def __init__(self, a, b):
         # TODO вызвать конструктор базового класса с помощью super
+        super().__init__()
         self.a = a
         self.b = b
-        super().__init__(name)
 
 
 if __name__ == "__main__":
-    rect = Rectangle(5, 10, 'rect_fig')
+    figure = Figure('Просто Мария + Марина')
+    figure.print_name()
+    rect = Rectangle(5, 10)
     rect.print_name()
-    # figure = Figure('Просто Мария + Марина')
-    # print(figure._name)
+

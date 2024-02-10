@@ -3,7 +3,7 @@ files:
   - name: main.py
     visible: true
     placeholders:
-      - offset: 204
+      - offset: 205
         length: 58
         placeholder_text: '# TODO вызвать конструктор базового класса с помощью super'
         initial_state:
